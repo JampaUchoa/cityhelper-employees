@@ -18,7 +18,7 @@ def read_root(latitude: float, longitude: float):
     # Define prioridade por data de processo
     open_solicitations = r.json()["results"]
     if (len(open_solicitations) == 0):
-        return {"status": "NO_SOLICITATION"}
+        return {"message": "NO_SOLICITATION"}
     print(open_solicitations)
     highest_priority = None
     highest_priority_score = None
